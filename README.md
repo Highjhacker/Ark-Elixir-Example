@@ -1,21 +1,63 @@
-# ArkElixirExample
+# Ark-Elixir-Example
 
-**TODO: Add description**
+A quick CLI application who can retrieve the balance of the specified Ark address.
+
+## Built with
+- [Elixir](https://elixir-lang.org/) (1.5.0)
+- [Ark-Elixir](https://github.com/Highjhacker/Ark-Elixir)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ark_elixir_example` to your list of dependencies in `mix.exs`:
+First you need to fetch the dependencies
 
 ```elixir
 def deps do
   [
-    {:ark_elixir_example, "~> 0.1.0"}
+    {:ark_elixir, "~> 0.1.1"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ark_elixir_example](https://hexdocs.pm/ark_elixir_example).
+Then you need to build them
 
+```shell
+$ mix deps.get
+```
+
+
+And add this line in your mix.exs for escript
+```elixir
+def project do
+  [
+    app: :ark_elixir_example,
+    version: "0.1.0",
+    elixir: "~> 1.5",
+    start_permanent: Mix.env == :prod,
+    escript: [main_module: ArkElixirExample], # This line
+    deps: deps()
+  ]
+end
+
+```
+
+## Usage
+
+You can run the example like this :
+
+```shell
+$ mix escript.build
+>> Generated escript ark_elixir_example with MIX_ENV=dev
+
+./ark_elixir_example -a Acxb4Wxt2oUsXVViHJsenMuRDUjsMHHKeM                                                   
+>> %{"balance" => "112013970754", "success" => true,
+    "unconfirmedBalance" => "112013970754"}
+```
+
+
+## Authors
+
+- Jolan Beer - Highjhacker
+
+## License
+
+Ark_Elixir is under MIT license. See the [LICENSE file](https://github.com/Highjhacker/Ark-Elixir/blob/master/LICENSE) for more informations.
