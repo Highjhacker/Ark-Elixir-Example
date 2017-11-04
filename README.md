@@ -48,7 +48,7 @@ You can run the example like this :
 $ mix escript.build
 >> Generated escript ark_elixir_example with MIX_ENV=dev
 
-./ark_elixir_example -a Acxb4Wxt2oUsXVViHJsenMuRDUjsMHHKeM                                                   
+$ ./ark_elixir_example -a Acxb4Wxt2oUsXVViHJsenMuRDUjsMHHKeM                                                   
 >> %{"balance" => "112013970754", "success" => true,
     "unconfirmedBalance" => "112013970754"}
 ```
@@ -60,4 +60,4 @@ $ mix escript.build
 
 ## License
 
-Ark_Elixir is under MIT license. See the [LICENSE file](https://github.com/Highjhacker/Ark-Elixir/blob/master/LICENSE) for more informations.
+Ark_Elixir is under MIT license. See the [LICENSE file](https://github.com/Highjhacker/Ark-Elixir-Example/blob/master/LICENSE) for more informations.
