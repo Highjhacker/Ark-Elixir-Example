@@ -13,7 +13,7 @@ First you need to fetch the dependencies
 ```elixir
 def deps do
   [
-    {:ark_elixir, "~> 0.1.1"}
+    {:ark_elixir, "~> 0.1.2"}
   ]
 end
 ```
