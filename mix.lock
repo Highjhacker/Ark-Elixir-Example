@@ -1,4 +1,4 @@
-%{"ark_elixir": {:hex, :ark_elixir, "0.1.1", "b1675164fb5a2bc3a8f21956ee5ddb979dbac0b4fe01bf51bf4f71b11ead8ce1", [], [{:httpotion, "~> 3.0.2", [hex: :httpotion, repo: "hexpm", optional: false]}, {:poison, "~> 3.1", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
+%{"ark_elixir": {:hex, :ark_elixir, "0.1.2", "6ca3d2bbf60a362190ba7cc0843ad49f617c7a91c214526b7a2c765761fe63a6", [:mix], [{:httpotion, "~> 3.0.2", [hex: :httpotion, repo: "hexpm", optional: false]}, {:poison, "~> 3.1", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
   "httpotion": {:hex, :httpotion, "3.0.3", "17096ea1a7c0b2df74509e9c15a82b670d66fc4d66e6ef584189f63a9759428d", [], [{:ibrowse, "~> 4.4", [hex: :ibrowse, repo: "hexpm", optional: false]}], "hexpm"},
   "ibrowse": {:hex, :ibrowse, "4.4.0", "2d923325efe0d2cb09b9c6a047b2835a5eda69d8a47ed6ff8bc03628b764e991", [], [], "hexpm"},
   "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [], [], "hexpm"}}
